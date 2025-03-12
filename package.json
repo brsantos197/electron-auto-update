@@ -1,6 +1,6 @@
 {
   "name": "electron-auto-update",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "",
   "main": "main.js",
   "type": "module",
@@ -17,9 +17,11 @@
   },
   "packageManager": "pnpm@9.15.4",
   "dependencies": {
+    "electron-log": "^5.3.2",
     "electron-updater": "^6.3.9"
   },
   "build": {
+    "asar": false,
     "publish": {
       "provider": "github",
       "owner": "brsantos197",
