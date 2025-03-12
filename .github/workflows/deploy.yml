@@ -1,6 +1,11 @@
 name: Deploy App
 on: 
   workflow_dispatch:
+    inputs:
+      title:
+        description: "Title for the deployment"
+        required: true
+        default: "Build App"
     
 jobs:
   build:
